@@ -1,22 +1,22 @@
-/*
-* Kayden Miller
-* Assignment 5B
-* Used to denoted objects as items, and assign them health
-*/
-
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Target : MonoBehaviour
+public abstract class GenericTarget : MonoBehaviour, IDamageable
 {
-    public float health = 50f;
+    public float health;
+
     public TargetTracker tracker;
+    // Start is called before the first frame update
+     protected void Start()
+    {
+        health = 1f;
+    }
 
     public void TakeDamage(float amount)
     {
         health -= amount;
-        if(health <= 0)
+        if (health <= 0)
         {
             Die();
         }

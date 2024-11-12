@@ -6,6 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/MyScenes/MainMenu.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
     path: Assets/PolygonStarter/Scenes/Demo.unity
     guid: 5215016c20f88ea498985ac3e0ab4f9d
+  - enabled: 1
+    path: Assets/MyScenes/New Scene.unity
+    guid: a458e57425e9c4b4b9481031ca1b45e9
+  - enabled: 0
+    path: Assets/StarterAssets/ThirdPersonController/Scenes/Playground.unity
+    guid: e9017d5f96b9f09489b4b37e1d6eb914
   m_configObjects: {}

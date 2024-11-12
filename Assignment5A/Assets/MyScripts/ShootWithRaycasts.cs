@@ -37,7 +37,7 @@ public class ShootWithRaycasts : MonoBehaviour
         {
             Debug.Log(hitInfo.transform.gameObject.name);
 
-            Target target = hitInfo.transform.gameObject.GetComponent<Target>();
+            GenericTarget target = hitInfo.transform.gameObject.GetComponent<GenericTarget>();
 
             if (hitInfo.rigidbody != null)
             {

@@ -29,11 +29,7 @@ public class WinTrigger : MonoBehaviour
     {
         if(won)
         {
-            winText.text = "You Win!\nPress R to Restart!";
-            if(Input.GetKeyDown(KeyCode.R))
-            {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-            }
+            winText.text = "Press P to pause and go\nback to the main menu!";
         }
     }
 }
