@@ -66,11 +66,11 @@ namespace StarterAssets
 
 	
 #if ENABLE_INPUT_SYSTEM && STARTER_ASSETS_PACKAGES_CHECKED
-		private PlayerInput _playerInput;
+		[SerializeField] private PlayerInput _playerInput;
 #endif
-		private CharacterController _controller;
-		private StarterAssetsInputs _input;
-		private GameObject _mainCamera;
+		[SerializeField] private CharacterController _controller;
+		[SerializeField] private StarterAssetsInputs _input;
+		[SerializeField] private GameObject _mainCamera;
 
 		private const float _threshold = 0.01f;
 

@@ -38,6 +38,7 @@ public  class GameManager : Singleton<GameManager>
 
     public void LoadLevel(string levelName)
     {
+        Time.timeScale = 1.0f;
         AsyncOperation ao = SceneManager.LoadSceneAsync(levelName, LoadSceneMode.Additive);
         if( ao == null)
         {
@@ -45,6 +46,7 @@ public  class GameManager : Singleton<GameManager>
             return;
         }
         CurrentLevelName = levelName;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     public void UnloadLevel(string levelName)
